@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { WallLoginComponent } from './wall-login/wall-login.component';
 import { CrearPacienteComponent } from './crear-paciente/crear-paciente.component';
 import{FormsModule} from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
 
 const appRoutes: Routes = [
   {
@@ -25,12 +26,14 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     ProfileComponent,
-    WallLoginComponent,    
+    WallLoginComponent,   
+    CrearPacienteComponent, 
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
