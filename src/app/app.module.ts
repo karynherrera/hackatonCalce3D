@@ -14,6 +14,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { RouterModule, Routes } from '@angular/router';
 import { WallLoginComponent } from './wall-login/wall-login.component';
 import { CrearPacienteComponent } from './crear-paciente/crear-paciente.component';
+
 const appRoutes: Routes = [
   {
     path: '',

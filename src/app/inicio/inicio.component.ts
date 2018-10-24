@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class InicioComponent implements OnInit {
 
   tableData: object[] = [
-    { Paciente: 'Mark', Estado: 'Otto', Amputación: '@mdo', Diagnostico: 'markotto@gmail.com', Comuna: 'USA', Institución: 'San Francisco' },
-    { Paciente: 'Jacob', Estado: 'Thornton', Amputación: '@fat', Diagnostico: 'jacobt@gmail.com', Comuna: 'France', Institución: 'Paris' },
-    { Paciente: 'Larry', Estado: 'the Bird', Amputación: '@twitter', Diagnostico: 'larrybird@gmail.com', Comuna: 'Germany', Institución: 'Berlin' },
-    { Paciente: 'Paul', Estado: 'Topolski', Amputación: '@P_Topolski', Diagnostico: 'ptopolski@gmail.com', Comuna: 'Poland', Institución: 'Warsaw' },
-    { Paciente: 'Anna', Estado: 'Doe', Amputación: '@andy', Diagnostico: 'annadoe@gmail.com', Comuna: 'Spain', Institución: 'Madrid' }
+    { paciente: 'Mark', estado: 'Otto', amputacion: '@mdo', diagnostico: 'markotto@gmail.com', comuna: 'USA', institucion: 'San Francisco' },
+    { paciente: 'Jacob', estado: 'Thornton', amputacion: '@fat', diagnostico: 'jacobt@gmail.com', comuna: 'France', institucion: 'Paris' },
+    { paciente: 'Larry', estado: 'the Bird', amputacion: '@twitter', diagnostico: 'larrybird@gmail.com', comuna: 'Germany', institucion: 'Berlin' },
+    { paciente: 'Paul', estado: 'Topolski', amputacion: '@P_Topolski', diagnostico: 'ptopolski@gmail.com', comuna: 'Poland', institucion: 'Warsaw' },
+    { paciente: 'Anna', estado: 'Doe', amputacion: '@andy', diagnostico: 'annadoe@gmail.com', comuna: 'Spain', institucion: 'Madrid' }
   ];
   private sorted = false;
   constructor() { }
