@@ -1,98 +1,22 @@
-<div class="card card-cascade narrower">
-
-  <!--Card image-->
-  <div class="view view-cascade gradient-card-header blue-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-between align-items-center">
-
-    <div>
-      <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
-        <mdb-icon icon="th-large" class="mt-0"></mdb-icon>
-      </button>
-      <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
-        <mdb-icon icon="columns" class="mt-0"></mdb-icon>
-      </button>
-    </div>
-
-    <a href="" class="white-text mx-3">Table name</a>
-
-    <div>
-      <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
-        <mdb-icon icon="pencil" class="mt-0"></mdb-icon>
-      </button>
-      <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
-        <mdb-icon icon="remove" class="mt-0"></mdb-icon>
-      </button>
-      <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
-        <mdb-icon icon="info-circle" class="mt-0"></mdb-icon>
-      </button>
-    </div>
-
-  </div>
-  <!--/Card image-->
-
-  <div class="px-4">
-
-    <div class="table-wrapper">
-      <!--Table-->
-      <table class="table table-hover mb-0">
-
-        <!--Table head-->
-        <thead>
-          <tr>
-            <th>
-              <mdb-checkbox></mdb-checkbox>
-            </th>
-            <th class="th-lg">
-              <a (click)="sortBy('paciente')">Paciente
-                <mdb-icon icon="sort" class="ml-1"></mdb-icon>
-              </a>
-            </th>
-            <th class="th-lg">
-              <a (click)="sortBy('estado')">Estado
-                <mdb-icon icon="th-sort" class="ml-1"></mdb-icon>
-              </a>
-            </th>
-            <th class="th-lg">
-              <a (click)="sortBy('amputacion')">Amputación
-                <mdb-icon icon="th-sort" class="ml-1"></mdb-icon>
-              </a>
-            </th>
-            <th class="th-lg">
-              <a (click)="sortBy('diagnostico')">Diagnostico
-                <mdb-icon icon="th-sort" class="ml-1"></mdb-icon>
-              </a>
-            </th>
-            <th class="th-lg">
-              <a (click)="sortBy('comuna')">Comuna
-                <mdb-icon icon="th-sort" class="ml-1"></mdb-icon>
-              </a>
-            </th>
-            <th class="th-lg">
-              <a (click)="sortBy('institucion')">Institución
-                <mdb-icon icon="th-sort" class="ml-1"></mdb-icon>
-              </a>
-            </th>
-          </tr>
-        </thead>
-        <!--Table head-->
-
-        <!--Table body-->
-        <tbody>
-          <tr *ngFor="let row of tableData;let i = index">
-            <th scope="row">
-              <mdb-checkbox></mdb-checkbox>
-            </th>
-            <td>{{row.paciente}}</td>
-            <td>{{row.estado}}</td>
-            <td>{{row.amputacion}}</td>
-            <td>{{row.diagnostico}}</td>
-            <td>{{row.comuna}}</td>
-            <td>{{row.institucion}}</td>
-          </tr>
-        </tbody>
-        <!--Table body-->
-      </table>
-      <!--Table-->
-    </div>
-  </div>
-</div>
-
+<table>
+  <thead>
+    <tr>
+      <th>Paciente</th>
+      <th>Estado</th>
+      <th>Amputacion</th>
+      <th>Diagnostico</th>
+      <th>Comuna</th>
+      <th>Institucion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let paciente of pacientes">
+      <td>{{ pacientes.paciente }}</td>
+      <td>{{ pacientes.estado }}</td>
+      <td>{{ pacientes.amputacion }}</td>
+      <td>{{ pacientes.diagnostico }}</td>
+      <td>{{ pacientes.comuna }}</td>
+      <td>{{ pacientes.institucion }}</td>
+    </tr>
+  </tbody>
+</table>

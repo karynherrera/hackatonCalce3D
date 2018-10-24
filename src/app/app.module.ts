@@ -7,15 +7,14 @@ import { InicioComponent } from './inicio/inicio.component';
 // Formulario
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-
-
+import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 import { ProfileComponent } from './profile/profile.component';
 import { RouterModule, Routes } from '@angular/router';
 import { WallLoginComponent } from './wall-login/wall-login.component';
 import { CrearPacienteComponent } from './crear-paciente/crear-paciente.component';
-import { MDBBootstrapModule, MdbTablePaginationComponent, MdbTableService } from 'angular-bootstrap-md';
-
+import { HttpClientModule } from '@angular/common/http';
+import { TableService } from './inicio/tabla/table.service';
 
 const appRoutes: Routes = [
   {
@@ -35,6 +34,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
+    Component,
     AppComponent,
     InicioComponent,
     ProfileComponent,
@@ -50,11 +50,10 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     FormsModule,
-    MDBBootstrapModule.forRoot(),
-    MdbTablePaginationComponent,
-    MdbTableService
+    HttpClientModule,
+    Ng2SmartTableModule
   ],
-  providers: [],
+  providers: [TableService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
