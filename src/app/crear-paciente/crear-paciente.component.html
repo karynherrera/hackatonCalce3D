@@ -1,13 +1,37 @@
-<body class="">
-  <div class="container-fluid col-12 ">
-    <section  id="form_section" class="col-sm-8 col-md-6 col-lg-4">
-      <form > <!--corchete input-->
-        <div class='formUser'>
-          
-        <button type="submit" class='registrarse'>Registrar!</button>
+<mat-card>
+    <form>
+        <div class="row">
+          <div class="col">
+            <p class="text">Nombre*</p>
+            <input type="text" class="form-control" >
+          </div>
+          <div class="col">
+              <p class="text">Apellido*</p>
+            <input type="text" class="form-control" >
+          </div>
         </div>
+        <div class="row">
+            <div class="col">
+              <p class="text">Rut*</p>
+              <input type="text" class="form-control" >
+            </div>
+            <div class="col">
+                <p class="text">Fecha de Nacimiento</p>
+              <input type="text" class="form-control" >
+            </div>
+            <div class="col">
+                <p class="text">Sexo</p>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      -----
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Femenino</a>
+                      <a class="dropdown-item" href="#">Masculino</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
       </form>
-    </section>
-  </div>
-  </body>
+  </mat-card>
   

@@ -10,6 +10,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CrearPacienteComponent } from './crear-paciente/crear-paciente.component';
 import { ProfileComponent } from 'src/app/profile/profile.component';
 import { WallLoginComponent } from 'src/app/wall-login/wall-login.component';
+import {MatCardModule} from '@angular/material/card';
 
 const appRoutes: Routes = [
   {
@@ -32,11 +33,11 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     ReactiveFormsModule,
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     FormsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
