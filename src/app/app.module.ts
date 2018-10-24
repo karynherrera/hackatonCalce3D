@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { WallLoginComponent } from './wall-login/wall-login.component';
 import { FormLoginComponent } from './form-login/form-login.component';
 import { FormsModule } from '@angular/forms';
+import { InstitutionComponent } from './institution/institution.component';
 
 const appRoutes: Routes = [
   {
@@ -20,7 +21,7 @@ const appRoutes: Routes = [
     AppComponent,
     ProfileComponent,
     WallLoginComponent,    
-    FormLoginComponent, 
+    FormLoginComponent, InstitutionComponent, 
   ],
   imports: [
     BrowserModule,
