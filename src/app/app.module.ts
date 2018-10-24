@@ -17,19 +17,26 @@ import { CrearPacienteComponent } from './crear-paciente/crear-paciente.componen
 const appRoutes: Routes = [
   {
     path: '',
-    component: WallLoginComponent, 
+    component: WallLoginComponent,
 
   },
   {
     path: 'crearPaciente',
     component: CrearPacienteComponent,
   },
+  {
+    path: 'Inicio',
+    component: InicioComponent,
+  }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    InicioComponent
+    InicioComponent,
+    ProfileComponent,
+    WallLoginComponent,
+    CrearPacienteComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +46,8 @@ const appRoutes: Routes = [
     WallLoginComponent,
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
