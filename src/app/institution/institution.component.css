@@ -1,1 +1,18 @@
+.menu{
+  padding: 3%;
+}
+ul{
+  padding-bottom: 2%;
+}
 
+ul:hover{
+  color: #FFF;
+  background-color: #252525;
+  text-decoration:underline;
+}
+
+
+a{
+  color: #4D5863;
+  font-weight: 700;   
+}

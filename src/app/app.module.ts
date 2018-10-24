@@ -12,7 +12,7 @@ import { FormLoginComponent } from './form-login/form-login.component';
 import { InstitutionComponent } from './institution/institution.component';
 import { ProfileComponent } from 'src/app/profile/profile.component';
 import { CrearPacienteComponent } from './crear-paciente/crear-paciente.component';
-
+import {MatCardModule} from '@angular/material/card';
 
 const appRoutes: Routes = [
   {
@@ -45,11 +45,11 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     ReactiveFormsModule,
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     FormsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

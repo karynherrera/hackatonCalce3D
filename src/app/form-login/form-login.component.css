@@ -1,12 +1,13 @@
 .cont{
-  background-color: white;  
+  background-color: white; 
   margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 10%;  
+  margin-right: 10%;    
   border: #3a9fe3 solid; 
   padding: 5%;
   padding-left: -5%;
   padding-right: -10%;
+  margin-bottom: -10%;
+  margin-top:-10%;  
 }
 .form-control{
   width: 75%;
@@ -31,7 +32,7 @@ p{
   margin-left: 22%;
 }
 
-@media(min-width:320px){ 
+@media(width:320px){ 
   img{
     width: 75%;
     height: 75%;
