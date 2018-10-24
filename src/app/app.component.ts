@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'calce3D';
+  title = 'Calce3D';
+
+  user: string;
+  password: string;
+
 }
