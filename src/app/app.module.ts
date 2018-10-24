@@ -10,17 +10,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 
 
-import { ProfileComponent } from './profile/profile.component';
+
 import { RouterModule, Routes } from '@angular/router';
-import { WallLoginComponent } from './wall-login/wall-login.component';
+
 import { CrearPacienteComponent } from './crear-paciente/crear-paciente.component';
 
 const appRoutes: Routes = [
-  {
-    path: '',
-    component: WallLoginComponent,
-
-  },
   {
     path: 'crearPaciente',
     component: CrearPacienteComponent,
@@ -35,16 +30,16 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     InicioComponent,
-    ProfileComponent,
-    WallLoginComponent,
+    
+    
     CrearPacienteComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    ProfileComponent,
-    WallLoginComponent,
+    
+    
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     FormsModule,
