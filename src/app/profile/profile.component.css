@@ -1,19 +1,79 @@
 .wrapper {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 #sidebar {
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    z-index: 999;
-    background:#65BFD9;
-    color: #fff;
-    transition: all 0.3s;
+  width: 15rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  background: #65bfd9;
+  color: #fff;
+  transition: all 0.3s;
+  box-shadow: 2px 2px 5px #999;
 }
+
+.logoNavbar {
+  background-color: #363e4a;
+  padding: 2rem;
+  width: 80%;
+  margin-right: 1rem;
+}
+
+.headerNavbar {
+  background-color: #363e4a;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.fa-user {
+  padding: 1rem;
+}
+
+.fa-door-open {
+  padding: 1rem;
+  margin-left: 5%;
+}
+
+.fa-building {
+  padding: 1rem;
+}
+
+.fa-user-plus {
+  padding: 1rem;
+}
+
+.plus {
+  padding-left: 0 !important;
+}
+
+.fas {
+  color: white;
+  font-size: 2rem;
+}
+
+.link {
+  font-family: "K2D", sans-serif;
+  color: white;
+  padding: 1rem;
+}
+
+.out {
+  margin-left: 4%;
+}
+
+.liProfile {
+  margin-top: 1rem;
+}
+
+.liOut {
+  margin-top: 20rem;
+}
+
+/*#363E4A negro*/
 /*#363D4B gris*/
 /*#65BFD9 celeste*/
 /*#32C970 verde*/
