@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
 
@@ -11,6 +10,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { WallLoginComponent } from './wall-login/wall-login.component';
 import { FormLoginComponent } from './form-login/form-login.component';
 import { InstitutionComponent } from './institution/institution.component';
+import { ProfileComponent } from 'src/app/profile/profile.component';
+import { CrearPacienteComponent } from './crear-paciente/crear-paciente.component';
+
 
 const appRoutes: Routes = [
   {
@@ -34,13 +36,17 @@ const appRoutes: Routes = [
     FormLoginComponent, 
     InstitutionComponent, 
     InicioComponent,  
+    AppComponent,
+    InicioComponent,
+    ProfileComponent,
+    CrearPacienteComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    
-    
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     FormsModule,
