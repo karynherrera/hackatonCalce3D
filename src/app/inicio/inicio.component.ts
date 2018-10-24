@@ -8,11 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class InicioComponent implements OnInit {
 
   tableData: object[] = [
-    { paciente: 'Mark', estado: 'Otto', amputacion: '@mdo', diagnostico: 'markotto@gmail.com', comuna: 'USA', institucion: 'San Francisco' },
-    { paciente: 'Jacob', estado: 'Thornton', amputacion: '@fat', diagnostico: 'jacobt@gmail.com', comuna: 'France', institucion: 'Paris' },
-    { paciente: 'Larry', estado: 'the Bird', amputacion: '@twitter', diagnostico: 'larrybird@gmail.com', comuna: 'Germany', institucion: 'Berlin' },
-    { paciente: 'Paul', estado: 'Topolski', amputacion: '@P_Topolski', diagnostico: 'ptopolski@gmail.com', comuna: 'Poland', institucion: 'Warsaw' },
-    { paciente: 'Anna', estado: 'Doe', amputacion: '@andy', diagnostico: 'annadoe@gmail.com', comuna: 'Spain', institucion: 'Madrid' }
+    { paciente: 'Juan Perez', estado: 'Esperando Cavidad', amputacion: 'Izquierdo Transhumeral', diagnostico: 'Diabetes',
+     comuna: 'Santiago', institucion: 'INRPAC' },
+    { paciente: 'Alicia Chalk', estado: 'Esperando Cavidad', amputacion: 'Derecho Transradial', diagnostico: 'Diabetes',
+     comuna: 'Santiago', institucion: 'Mutual' },
+    { paciente: 'Larry Bird', estado: 'Imprimiendo', amputacion: 'Izquierdo Transtibial', diagnostico: 'Diabetes',
+     comuna: 'Santiago', institucion: 'Mutual' },
+    { paciente: 'Paul Topolski', estado: 'Esperando Cavidad', amputacion: '	Derecho Transtibial', diagnostico: 'Diabetes',
+     comuna: 'Santiago', institucion: 'INRPAC' },
+    { paciente: 'Anna Bolena', estado: 'Imprimiendo', amputacion: 'Derecho Transtibial', diagnostico: 'Diabetes',
+     comuna: 'Santiago', institucion: 'Mutual' }
   ];
   private sorted = false;
   constructor() { }
