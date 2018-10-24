@@ -14,6 +14,10 @@ const appRoutes: Routes = [
     path:'',
     component: WallLoginComponent, 
   }, 
+  {
+    path:'muro',
+    component: InstitutionComponent, 
+  }, 
 ];
 
 @NgModule({
@@ -21,7 +25,8 @@ const appRoutes: Routes = [
     AppComponent,
     ProfileComponent,
     WallLoginComponent,    
-    FormLoginComponent, InstitutionComponent, 
+    FormLoginComponent, 
+    InstitutionComponent, 
   ],
   imports: [
     BrowserModule,
