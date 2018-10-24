@@ -1,0 +1,31 @@
+mat-card-header{
+  background-color: #333333;
+  width: 100%;
+  color:white;
+}
+
+textarea{
+  margin: 1%;
+  border: none;
+  padding: 0%;
+  width: 95%;
+}
+textarea:focus{
+  border: none;
+}
+.btnEnviar{
+  text-align: right;
+  background-color: #00BCD4;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 5%;
+  padding:0.5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  position: relative;
+  left: 88%;
+}
+mat-card{
+  width: 100%;
+}
