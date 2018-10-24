@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
@@ -10,6 +10,21 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 
 
+import { ProfileComponent } from './profile/profile.component';
+import { RouterModule, Routes } from '@angular/router';
+import { WallLoginComponent } from './wall-login/wall-login.component';
+import { CrearPacienteComponent } from './crear-paciente/crear-paciente.component';
+const appRoutes: Routes = [
+  {
+    path: '',
+    component: WallLoginComponent, 
+
+  },
+  {
+    path: 'crearPaciente',
+    component: CrearPacienteComponent,
+  },
+];
 
 @NgModule({
   declarations: [
@@ -20,6 +35,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    ProfileComponent,
+    WallLoginComponent,
+    BrowserModule,
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

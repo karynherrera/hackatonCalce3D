@@ -5,18 +5,18 @@
   <div class='banner'>
     <img src='../../assets/Imagenes/LogoInicio.jpg' alt='' srcset=''>
   </div> 
-  <form [formGroup]='authForm' *ngIf='!(authService.user$ | async)'>
+  <form [formGroup]>
     <p>Ingresa tu usuario:</p>
     <input type='email' formControlName='email'><br>
     <p>Ingresa tu contraseña:</p>
     <input type='password' formControlName='password'><br>
-    <button mat-button type='button' (click)='onLogin()' [disabled]='!authForm.valid'>Ingresar</button><br>
+    <button mat-button type='button' [disabled]='!authForm.valid'>Ingresar</button><br>
     <button mat-button routerLink='/register'>Ir a Registro</button>
   </form>
-  <div class="logged" *ngIf='authService.user$ | async'>
+  <div class="logged" >
     <p>Ya ingresaste.</p>
     <p> Por favor elige una opción:</p>
     <button mat-button routerLink='/wall'>Ir al muro</button>
-    <button mat-button type='button' (click)='onLogout()'>Salir</button>
+    <button mat-button type='button'>Salir</button>
   </div>
 </div>
