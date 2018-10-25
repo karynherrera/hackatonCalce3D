@@ -23,10 +23,7 @@ import { ComentarioComponent } from "./scanner/comentario/comentario.component";
 import { AddCommentComponent } from "./scanner/add-comment/add-comment.component";
 import { AngularFireStorageModule } from "@angular/fire/storage";
 import { AngularFireDatabaseModule } from "@angular/fire/database";
-import {
-  AngularFirestore,
-  AngularFirestoreModule
-} from "@angular/fire/firestore";
+import { AngularFirestore, AngularFirestoreModule } from "@angular/fire/firestore";
 import { AngularFireModule } from "@angular/fire";
 import { environment } from "../environments/environment";
 import { MatSnackBarModule } from '@angular/material/snack-bar';
