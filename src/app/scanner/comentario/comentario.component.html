@@ -1,10 +1,10 @@
-<mat-card *ngFor ="let post of comentarios"class="card">
+<mat-card *ngFor ="let post of comentarios" class="card">
   <div class="row">
-      <div class="col">
+      <div class="col-9">
         <p>{{post.comentario}}</p>
       </div>
-      <div class="col-3">
-          <button (click)="delete($event, post)" mat-button type="submit" class='eliminar'>Eliminar Comentario</button>
+      <div class="col-3 text-right p-0">
+          <button (click)="delete($event, post)" mat-button type="submit" class='eliminar'>X</button>
       </div>
   </div>
 </mat-card>
