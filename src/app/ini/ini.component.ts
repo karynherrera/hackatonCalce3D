@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output, EventEmitter  } from '@angular/core';
 
 @Component({
   selector: 'app-ini',
@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ini.component.css']
 })
 export class IniComponent implements OnInit {
-
+  verProfile: Boolean;
+  verCrear: Boolean;
   pacientes: string;
-
+  @Output() onProfile: EventEmitter<any> = new EventEmitter<any>();
+  @Output() onCrear: EventEmitter<any> = new EventEmitter<any>();
   constructor() { }
 
   ngOnInit() {
@@ -20,5 +22,15 @@ export class IniComponent implements OnInit {
         this.pacientes = pacientes;
       });
   }
+
+  viewProfile(event) {
+    this.verProfile = true;
+    this.onProfile.emit(this.verProfile);
+    }
+
+    viewCrear(event) {
+      this.verCrear = true;
+      this.onCrear.emit(this.verCrear);
+      }
 
 }

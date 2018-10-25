@@ -6,9 +6,10 @@
       </div>
     </div>
 
+
     <div class="row">
       <div class="col-md-4 text-center">
-        <button type="button" class="btn btn-primary">Crea paciente</button>
+        <button type="button" class="btn btn-primary" (click)="viewCrear($event)">Crear paciente</button>
       </div>
       <div class="col-8">
         <div class="input-group">
@@ -18,7 +19,8 @@
             <button class="btn btnSearch" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
           </div>
         </div>
-      </div>
+      </div>  
+
     </div>
     <div class="row">
       <div class="col">
@@ -56,30 +58,31 @@
     <div class="container-fluid">
       <div class="row scrollDiv p-0">
         <div class="col-12">
-          <table class="table" id="tableOne">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col">Paciente</th>
-                <th scope="col">Estado</th>
-                <th scope="col">Amputación</th>
-                <th scope="col">Diagnóstico</th>
-                <th scope="col">Comuna</th>
-                <th scope="col">Institución</th>
-              </tr>
-            </thead>
-            <tbody *ngFor="let paciente of pacientes">
-              <tr>
-                <td scope="row">{{paciente.paciente}}</td>
-                <td>{{paciente.estado}}</td>
-                <td>{{paciente.amputacion}}</td>
-                <td>{{paciente.diagnostico}}</td>
-                <td>{{paciente.comuna}}</td>
-                <td>{{paciente.institucion}}</td>
-              </tr>
-            </tbody>
-          </table>
+         <table class="table" id="tableOne">      
+        <thead class="thead-dark">
+            <tr>
+              <th scope="col">Paciente</th>
+              <th scope="col">Estado</th>
+              <th scope="col">Amputación</th>
+              <th scope="col">Diagnóstico</th>
+              <th scope="col">Comuna</th>
+              <th scope="col">Institución</th>
+            </tr>
+          </thead>
+        <tbody *ngFor="let paciente of pacientes">
+          <tr>
+            <td scope="row" class="perfil" (click)="viewProfile($event)">{{paciente.paciente}}</td>
+            <td>{{paciente.estado}}</td>
+            <td>{{paciente.amputacion}}</td>
+            <td>{{paciente.diagnostico}}</td>
+            <td>{{paciente.comuna}}</td>
+            <td>{{paciente.institucion}}</td>
+          </tr>         
+        </tbody>
+      </table>
         </div>
       </div>
     </div>
-  </div>
-</body>
+
+  
+
