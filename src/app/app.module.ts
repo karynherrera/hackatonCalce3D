@@ -12,7 +12,9 @@ import { FormLoginComponent } from './form-login/form-login.component';
 import { InstitutionComponent } from './institution/institution.component';
 import { ProfileComponent } from 'src/app/profile/profile.component';
 import { CrearPacienteComponent } from './crear-paciente/crear-paciente.component';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AuthService } from './auth.service';
 
 const appRoutes: Routes = [
   {
@@ -49,9 +51,10 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     FormsModule,
-    MatCardModule
+    MatCardModule,
+    AngularFireAuthModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
