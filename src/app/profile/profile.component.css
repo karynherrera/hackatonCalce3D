@@ -32,4 +32,13 @@ h3 {
   .extr {
     font-size: 18px;
   }
+  .btn {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  h5, p{
+    font-size: 0.9rem !important;
+  }
+  
 }
