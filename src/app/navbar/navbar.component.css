@@ -37,6 +37,17 @@ background-color: #363e4a;
   color: white;
   padding: 2rem;
 }
+a{
+    background-color: #65BFD9;
+    color: white;
+    display: block;
+    cursor:pointer;
+    text-align: left;
+  }
+  a:hover{
+    color: #0DAC8A !important; 
+  }
+  
 
 @media (max-width:576px){
     .logoNavbar {
