@@ -13,7 +13,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 import { WallLoginComponent } from './wall-login/wall-login.component';
-import { FormLoginComponent } from './form-login/form-login.component';
 import { InstitutionComponent } from './institution/institution.component';
 import { ProfileComponent } from 'src/app/profile/profile.component';
 import { CrearPacienteComponent } from './crear-paciente/crear-paciente.component';

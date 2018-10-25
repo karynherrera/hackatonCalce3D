@@ -29,7 +29,8 @@ export class FormLoginComponent implements OnInit {
     .then(()=>{
       this.router.navigate(['/muro']);
     })
-    .catch(()=>{   
+    .catch((error)=>{ 
+      console.log(error);  
     this.snackBar.open('Error al tratar de iniciar sesión, trata otra vez'
                         ,null
                         ,{
