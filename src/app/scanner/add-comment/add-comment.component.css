@@ -37,9 +37,13 @@ input[placeholder] {
 .mat-button{
   position: relative;
   text-align: right;
-  background-color: #00BCD4;
+  background-color: #65bfd9;
+  border-color: #65bfd9;
   color:white;
   margin: 1%;
+  font-family: "K2D", sans-serif;
+  font-size: 1rem;
+  padding: 0.5% 1%;
 }
 textarea{
   margin: 1%;

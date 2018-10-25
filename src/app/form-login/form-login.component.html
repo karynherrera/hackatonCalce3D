@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row justify-content-center">
     <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-9 cont text-center">
-      <form>
+      <form form [formGroup]="formLogin" *ngIf="!(authService.user | async)">
         <div class="form-group">
           <img src="../../assets/LOGO-CALCE.png" class="img-fluid">
           <input type="email" class="form-control mx-auto" id="exampleInputEmail1" aria-describedby="emailHelp"
