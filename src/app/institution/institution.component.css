@@ -1,50 +1,49 @@
-.menu{
+.menu {
   padding-top: 3%;
 }
-a:hover{    
-  
-  color:#13ce66;
+a:hover {
+  color: #13ce66;
 }
-p{
+p {
   text-align: center;
   font-weight: 700;
   font-size: 26px;
 }
-a{
-  color: #4D5863;
-  font-weight: 700;   
+a {
+  color: #4d5863;
+  font-weight: 700;
 }
-.form-control{
-  border-right:none; 
+.form-control {
+  border-right: none;
 }
-.btn-primary{
-  background-color: #5bc0de;
+.btn {
+  background-color: #5bc0de !important;
   border: none;
-  color: white;
+  color: white !important;
 }
-#basic-addon2{
-border-left: none;
-background-color: white;
-border-color: #cad0d8;
-margin-right: 25%;
+#basic-addon2 {
+  border-left: none;
+  background-color: white;
+  border-color: #cad0d8;
+  margin-right: 25%;
 }
-.input-group-text{
+.input-group-text {
   margin: 3.5%;
   background-color: white;
 }
-.btnFil{
+.btnFil {
   margin: 3.5%;
 }
-td{
+td {
   background-color: #f4f5f6;
 }
-.btn{
+.btn {
   background-color: white;
   color: #212529;
   display: block;
   margin: 2.5%;
-  cursor:pointer;
+  cursor: pointer;
 }
-.btn:hover{
-  color: #0DAC8A !important; 
+.btn:hover {
+  color: #0dac8a !important;
 }
