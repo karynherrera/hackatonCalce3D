@@ -1,32 +1,45 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { FormLoginComponent } from './form-login/form-login.component';
+// import {MatButtonModule} from '@angular/material/button';
 // Formulario
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { ProfileComponent } from './profile/profile.component';
+// import { ProfileComponent } from './profile/profile.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CrearPacienteComponent } from './crear-paciente/crear-paciente.component';
-import { HttpClientModule } from '@angular/common/http';
-
+import { NavbarComponent } from 'src/app/navbar/navbar.component';
 import { WallLoginComponent } from 'src/app/wall-login/wall-login.component';
 import { InstitutionComponent } from './institution/institution.component';
+import { ScannerComponent } from './scanner/scanner.component';
+// import { MatCardModule } from '@angular/material';
+
 const appRoutes: Routes = [
   {
     path: 'crearPaciente',
-    component: CrearPacienteComponent,
+    component: CrearPacienteComponent
   },
   {
     path: 'Inicio',
-    component: InicioComponent,
+    component: InicioComponent
   },
   {
+
     path: '',
     component: WallLoginComponent,
   },
+  {
+    path: 'scanner',
+    component: ScannerComponent,
+  },
+  {
+    path: '**', pathMatch: 'full', redirectTo: ''
+
+  }
 ];
 
 @NgModule({
@@ -34,11 +47,13 @@ const appRoutes: Routes = [
     Component,
     AppComponent,
     InicioComponent,
-    ProfileComponent,
+    NavbarComponent,
     CrearPacienteComponent,
     WallLoginComponent,
+
     FormLoginComponent,
-    InstitutionComponent,
+    InstitutionComponent
+
   ],
   imports: [
     BrowserModule,
@@ -46,9 +61,11 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     FormsModule,
-    HttpClientModule,
+   // MatCardModule,
+   // MatButtonModule,
+   // ProfileComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

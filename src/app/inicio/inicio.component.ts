@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TableService } from './tabla/table.service';
-import { Table } from './tabla/table';
 
 @Component({
   selector: 'app-inicio',
@@ -10,17 +8,9 @@ import { Table } from './tabla/table';
 })
 export class InicioComponent implements OnInit {
 
-pacientes: Table[];
 
-constructor(private tservice: TableService) { }
+constructor() { }
 
-ngOnInit() {
-  this
-    .tservice
-    .getPacientes()
-    .subscribe((data: Table[]) => {
-      this.pacientes = data;
-    });
-}
+ngOnInit() { }
 
 }

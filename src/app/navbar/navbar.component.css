@@ -1,0 +1,57 @@
+html {
+    height: 100vh;
+}
+
+#sidebar {
+  box-shadow: 2px 2px 5px #999;
+  height: 100%;
+}
+.small {
+    display: none;
+}
+.collapse {
+    background: #65bfd9; 
+}
+.navbar-brand {
+background-color: #363e4a;
+}
+.navbar {
+    background-color:#65bfd9;
+}
+.logoNavbar {
+  background-color: #363e4a;
+  width: 80%;
+}
+
+.headerNavbar {
+  background-color: #363e4a;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.fas {
+  color: white;
+  font-size: 2rem;
+}
+
+.link {
+  font-family: "K2D", sans-serif;
+  color: white;
+  padding: 2rem;
+}
+
+@media (max-width:768px){
+    .logoNavbar {
+        display: none;
+    }
+    .navbar-brand {
+        display:block;
+        background-image: url(../../assets/logo.png);
+    }
+}
+
+/*#363E4A negro*/
+/*#363D4B gris*/
+/*#65BFD9 celeste*/
+/*#32C970 verde*/
+/*#F1F5F4 gris suave*/
