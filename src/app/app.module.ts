@@ -17,17 +17,17 @@ import { CrearPacienteComponent } from './crear-paciente/crear-paciente.componen
 import { MatCardModule } from '@angular/material/card';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AuthService } from './auth.service';
-import { NavbarComponent } from "src/app/navbar/navbar.component";
-import { ScannerComponent } from "./scanner/scanner.component";
-import { ComentarioComponent } from "./scanner/comentario/comentario.component";
-import { AddCommentComponent } from "./scanner/add-comment/add-comment.component";
-import { AngularFireStorageModule } from "@angular/fire/storage";
-import { AngularFireDatabaseModule } from "@angular/fire/database";
-import { AngularFirestore, AngularFirestoreModule } from "@angular/fire/firestore";
-import { AngularFireModule } from "@angular/fire";
-import { environment } from "../environments/environment";
+import { NavbarComponent } from 'src/app/navbar/navbar.component';
+import { ScannerComponent } from './scanner/scanner.component';
+import { ComentarioComponent } from './scanner/comentario/comentario.component';
+import { AddCommentComponent } from './scanner/add-comment/add-comment.component';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { ComentsServiceService } from "src/app/services/coments-service.service";
+import { ComentsServiceService } from 'src/app/services/coments-service.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
