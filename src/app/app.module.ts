@@ -10,26 +10,29 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { CrearPacienteComponent } from './crear-paciente/crear-paciente.component';
-import { NavbarComponent } from "src/app/navbar/navbar.component";
+import { NavbarComponent } from 'src/app/navbar/navbar.component';
 import { WallLoginComponent } from 'src/app/wall-login/wall-login.component';
 import {MatCardModule} from '@angular/material/card';
 import { InstitutionComponent } from './institution/institution.component';
 import { ScannerComponent } from './scanner/scanner.component';
+import { RouterTestingModule } from '@angular/router/testing';
+import { DataTablesModule } from 'angular-datatables';
+import { DataService } from './data.service';
 
 const appRoutes: Routes = [
   {
-    path: "crearPaciente",
+    path: 'crearPaciente',
     component: CrearPacienteComponent
   },
   {
-    path: "Inicio",
+    path: 'Inicio',
     component: InicioComponent
   },
   {
 
-    path:'',
-    component: WallLoginComponent, 
-  }, 
+    path: '',
+    component: WallLoginComponent,
+  },
   {
     path: 'scanner',
     component: ScannerComponent,
@@ -47,10 +50,9 @@ const appRoutes: Routes = [
     NavbarComponent,
     CrearPacienteComponent,
     WallLoginComponent,
-
+    ScannerComponent,
     FormLoginComponent,
     InstitutionComponent
-
   ],
   imports: [
     BrowserModule,
@@ -59,9 +61,11 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     FormsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    RouterTestingModule,
+    DataTablesModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
