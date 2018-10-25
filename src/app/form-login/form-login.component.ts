@@ -5,6 +5,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularFireAuth} from '@angular/fire/auth';
 
 @Component({
   selector: 'app-form-login',
@@ -14,7 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 export class FormLoginComponent implements OnInit {
   formLogin: FormGroup;
 
-  constructor(private formBuilder:FormBuilder, public authService:AuthService, public snackBar: MatSnackBar, private router: Router, private location: Location) { this.createFormLogin();}
+  constructor(private formBuilder:FormBuilder, public authService:AuthService, public snackBar: MatSnackBar, private router: Router, private location: Location, public afAuth: AngularFireAuth) { this.createFormLogin();}
 
   ngOnInit() {
   }
@@ -26,7 +27,7 @@ export class FormLoginComponent implements OnInit {
   }
   onLogin(){
     this.authService.login(this.formLogin.value.email, this.formLogin.value.password)    
-    .then(()=>{ 
+    .then(()=>{            
       console.log(this.formLogin.value.email);    
       this.router.navigate(['/muro']);
     })
