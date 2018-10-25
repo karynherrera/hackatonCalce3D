@@ -16,10 +16,14 @@ a {
 .form-control {
   border-right: none;
 }
-.btn {
+.btnCrea {
   background-color: #5bc0de !important;
   border: none;
   color: white !important;
+}
+
+.btnSearch {
+  padding:0;
 }
 #basic-addon2 {
   border-left: none;
@@ -37,13 +41,26 @@ a {
 td {
   background-color: #f4f5f6;
 }
-.btn {
+.btnCrea {
   background-color: white;
   color: #212529;
   display: block;
   margin: 2.5%;
   cursor: pointer;
 }
-.btn:hover {
+.btnCrea:hover {
   color: #0dac8a !important;
+}
+
+.input-group {
+  border-color: #dfdfdf;
+  border-left-color: white;
+}
+
+a {
+  color: #4d5863;
+}
+
+.scrollDiv{
+  overflow-x: scroll;
 }

@@ -8,17 +8,15 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-3">
-        <a class="#"></a>
+      <div class="col-4">
+        <button type="button" class="btn btnCrea">Crea paciente</button>
       </div>
-      <div class="col-md-3">
-        <button type="button" class="btn">Crea paciente</button>
-      </div>
-      <div class="input-group col-md-3">
+      <div class="input-group col-xl-6 col-lg-6 col-8">
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="Nombre del paciente" aria-label="Recipient's username"
+            aria-describedby="button-addon2">
           <div class="input-group-append">
-            <button class="btn btnSearch" type="button"><i class="fas fa-search"></i></button>
+            <button class="btn btnSearch" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
           </div>
         </div>
       </div>
@@ -41,74 +39,80 @@
         <label class="form-check-label" for="exampleCheck1"> Cavidad entregada</label>
       </div>
       <div class="btnFil">
-        <button type="button" class="btn btn-primary">Filtrar</button>
+        <button type="button" class="btn btnCrea">Filtrar</button>
       </div>
     </div>
     <div>
-      <table class="table" id="tableOne">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">Pacientes en MUTUAL</th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-          </tr>
-        </thead>
-        <thead class="thead-white">
-          <tr>
-            <th scope="col">Paciente</th>
-            <th scope="col">Estado</th>
-            <th scope="col">Amputación</th>
-            <th scope="col">Diagnóstico</th>
-            <th scope="col">Comuna</th>
-            <th scope="col">Institución</th>
-          </tr>
-        </thead>
-        <tbody *ngFor="let paciente of pasFil">
-          <tr>
-            <td scope="row">{{paciente.paciente}}</td>
-            <td>{{paciente.estado}}</td>
-            <td>{{paciente.amputacion}}</td>
-            <td>{{paciente.diagnostico}}</td>
-            <td>{{paciente.comuna}}</td>
-            <td>{{paciente.institucion}}</td>
-          </tr>
-        </tbody>
-      </table>
-      <table class="table">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">Pacientes en INRPAC</th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-          </tr>
-        </thead>
-        <thead class="thead-white">
-          <tr>
-            <th scope="col">Paciente</th>
-            <th scope="col">Estado</th>
-            <th scope="col">Amputación</th>
-            <th scope="col">Diagnóstico</th>
-            <th scope="col">Comuna</th>
-            <th scope="col">Institución</th>
-          </tr>
-        </thead>
-        <tbody *ngFor="let paciente of pasFilFirst">
-          <tr>
-            <td scope="row">{{paciente.paciente}}</td>
-            <td>{{paciente.estado}}</td>
-            <td>{{paciente.amputacion}}</td>
-            <td>{{paciente.diagnostico}}</td>
-            <td>{{paciente.comuna}}</td>
-            <td>{{paciente.institucion}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="container-fluid">
+        <div class="row scrollDiv">
+          <div class="col-12 p-0">
+            <table class="table" id="tableOne">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Pacientes en MUTUAL</th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <thead class="thead-white">
+                <tr>
+                  <th scope="col">Paciente</th>
+                  <th scope="col">Estado</th>
+                  <th scope="col">Amputación</th>
+                  <th scope="col">Diagnóstico</th>
+                  <th scope="col">Comuna</th>
+                  <th scope="col">Institución</th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let paciente of pasFil">
+                <tr>
+                  <td scope="row">{{paciente.paciente}}</td>
+                  <td>{{paciente.estado}}</td>
+                  <td>{{paciente.amputacion}}</td>
+                  <td>{{paciente.diagnostico}}</td>
+                  <td>{{paciente.comuna}}</td>
+                  <td>{{paciente.institucion}}</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Pacientes en INRPAC</th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <thead class="thead-white">
+                <tr>
+                  <th scope="col">Paciente</th>
+                  <th scope="col">Estado</th>
+                  <th scope="col">Amputación</th>
+                  <th scope="col">Diagnóstico</th>
+                  <th scope="col">Comuna</th>
+                  <th scope="col">Institución</th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let paciente of pasFilFirst">
+                <tr>
+                  <td scope="row">{{paciente.paciente}}</td>
+                  <td>{{paciente.estado}}</td>
+                  <td>{{paciente.amputacion}}</td>
+                  <td>{{paciente.diagnostico}}</td>
+                  <td>{{paciente.comuna}}</td>
+                  <td>{{paciente.institucion}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
