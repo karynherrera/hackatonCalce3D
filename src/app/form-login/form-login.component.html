@@ -2,10 +2,10 @@
     <form [formGroup]="formLogin" *ngIf="!(authService.user | async)">
       <div class="form-group">
         <img src="../../assets/LOGO-CALCE.png">        
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre de usuario">        
+        <input type="email" class="form-control" formControlName="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre de usuario">        
       </div>
       <div class="form-group">        
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+        <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password" placeholder="Contraseña">
       </div>
       <div class="form-group form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
