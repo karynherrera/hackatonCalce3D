@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-profile',
@@ -9,7 +9,9 @@ export class ProfileComponent implements OnInit {
   pacientes: string;
   verScanner: Boolean = false;
 
-  constructor() {}
+  @Output() onScan: EventEmitter<any> = new EventEmitter<any>();
+  constructor() { }
+
 
   ngOnInit() {
     // Fetch del JSON entregado
@@ -23,6 +25,9 @@ export class ProfileComponent implements OnInit {
 
   viewScan(event) {
     this.verScanner = true;
+
     console.log(this.verScanner);
-  }
+    //console.log(this.verScanner);
+    this.onScan.emit(this.verScanner);
+    }
 }
