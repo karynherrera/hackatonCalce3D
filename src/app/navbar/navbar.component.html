@@ -11,10 +11,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="navbar-nav flex-column float-left">
-            <a class="nav-item nav-link link" href="#"><i class="fas fa-user pr-4"></i>Perfil</a>
-            <a class="nav-item nav-link link" href="#"><i class="fas fa-building pr-4"></i>Institución</a>
-            <a class="nav-item nav-link link" href="#"><i class="fas fa-user-plus pr-2"></i>Agregar paciente</a>
-            <a class="nav-item nav-link link" href="#"><i class="fas fa-door-open pr-4"></i>Salir</a>
+            <a class="nav-item nav-link link btn" (click)="viewProfile($event)"><i class="fas fa-user pr-4"></i>Perfil</a>
+            <a class="nav-item nav-link link btn" (click)="viewInstitucion($event)" ><i class="fas fa-building pr-4"></i>Institución</a>
+            <a class="nav-item nav-link link btn" (click)="viewCrear($event)" ><i class="fas fa-user-plus pr-2"></i>Agregar paciente</a>
+            <a class="nav-item nav-link link btn" ><i class="fas fa-door-open pr-4"></i>Salir</a>
           </div>
         </div>
       </nav>
@@ -22,7 +22,8 @@
     <div class="col-xl-10 col-lg-9 col-sm-9">
       <app-profile *ngIf="verProfile===false" (onScan)="viewScan(event)"></app-profile>
       <app-scanner *ngIf="verScanner===true"></app-scanner>
-      <app-institution></app-institution>
+      <app-institution *ngIf="verInstitucion===true"></app-institution>
+      <app-crear-paciente *ngIf="verCrear===true"></app-crear-paciente>
     </div>
   </div>
 </div>
