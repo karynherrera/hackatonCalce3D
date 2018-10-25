@@ -38,3 +38,14 @@ margin-right: 25%;
 td{
   background-color: #f4f5f6;
 }
+.btn-nav{
+  background-color: white;
+  color: #212529;
+  display: block;
+  margin: 2.5%;
+  cursor:pointer;
+}
+.btn-nav:hover :focus{
+  color: green;
+  background-color: green;
+}
