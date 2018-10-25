@@ -56,11 +56,11 @@
             <button type="button" class="btn btn-primary">Filtrar</button>
           </div>
     </div>
-    <div *ngFor="let paciente of pacientes">
-    <table class="table">
+    <div>
+    <table class="table" id="tableOne">
         <thead class="thead-dark">
           <tr>
-            <th scope="col">Pacientes en INRPAC</th>
+            <th scope="col">Pacientes en MUTUAL</th>
             <th scope="col"></th>
             <th scope="col"></th>
             <th scope="col"></th>
@@ -78,7 +78,7 @@
               <th scope="col">Institución</th>
             </tr>
           </thead>
-        <tbody>
+        <tbody *ngFor="let paciente of pasFil">
           <tr>
             <td scope="row">{{paciente.paciente}}</td>
             <td>{{paciente.estado}}</td>
@@ -86,29 +86,13 @@
             <td>{{paciente.diagnostico}}</td>
             <td>{{paciente.comuna}}</td>
             <td>{{paciente.institucion}}</td>
-          </tr>
-          <tr>
-            <td scope="row"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td scope="row"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
+          </tr>         
         </tbody>
       </table>
       <table class="table">
           <thead class="thead-dark">
             <tr>
-              <th scope="col">Pacientes en MUTUAL</th>
+              <th scope="col">Pacientes en INRPAC</th>
               <th scope="col"></th>
               <th scope="col"></th>
               <th scope="col"></th>
@@ -126,31 +110,15 @@
                 <th scope="col">Institución</th>
               </tr>
             </thead>
-          <tbody>
+          <tbody *ngFor="let paciente of pasFilFirst">
             <tr>
-              <td scope="row">1</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <td scope="row">2</td>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <td scope="row">3</td>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-            </tr>
+              <td scope="row">{{paciente.paciente}}</td>
+              <td>{{paciente.estado}}</td>
+              <td>{{paciente.amputacion}}</td>
+              <td>{{paciente.diagnostico}}</td>
+              <td>{{paciente.comuna}}</td>
+              <td>{{paciente.institucion}}</td>
+            </tr>        
           </tbody>
         </table>
       </div>
