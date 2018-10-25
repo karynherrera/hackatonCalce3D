@@ -1,0 +1,4 @@
+<form (ngSubmit)="newComment(formNew)" #formNew="ngForm" >
+    <textarea [(ngModel)]="Comment.comentario" #commentario="ngModel" type='text' name ="comentario" class="form-control" placeholder="Escribir Observación" rows="3"></textarea>
+    <button mat-button type="submit" class='publicar'>Enviar Comentario</button>
+</form>
