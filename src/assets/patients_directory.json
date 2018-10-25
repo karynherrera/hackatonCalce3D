@@ -1,20 +1,20 @@
 [{
   "paciente": "Juan Perez", "estado": "Esperando Cavidad", "amputacion": "Izquierdo Transhumeral", "diagnostico": "Diabetes",
-"comuna": "Santiago", "institucion": "INRPAC" 
+"comuna": "Santiago", "institucion": "INRPAC", "key":"1" 
 },
 { 
  "paciente": "Alicia Chalk", "estado": "Esperando Cavidad", "amputacion": "Derecho Transradial", "diagnostico": "Diabetes",
-"comuna": "Santiago", "institucion": "Mutual" 
+"comuna": "Santiago", "institucion": "Mutual", "key":"2" 
 },
 { 
  "paciente": "Larry Bird", "estado": "Imprimiendo", "amputacion": "Izquierdo Transtibial", "diagnostico": "Diabetes",
-"comuna": "Santiago", "institucion": "Mutual"
+"comuna": "Santiago", "institucion": "Mutual", "key":"3"
 },
 { 
  "paciente": "Paul Topolski", "estado": "Esperando Cavidad", "amputacion": "Derecho Transtibial", "diagnostico": "Diabetes",
-"comuna": "Santiago", "institucion": "INRPAC"
+"comuna": "Santiago", "institucion": "INRPAC", "key":"4"
 },
 { 
  "paciente": "Anna Bolena", "estado": "Imprimiendo", "amputacion": "Derecho Transtibial", "diagnostico": "Diabetes",
-"comuna": "Santiago", "institucion": "Mutual"
+"comuna": "Santiago", "institucion": "Mutual", "key":"5"
 }]
