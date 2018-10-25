@@ -1,5 +1,5 @@
 <div class="cont">
-    <form>
+    <form [formGroup]="formLogin" *ngIf="!(authService.user | async)">
       <div class="form-group">
         <img src="../../assets/LOGO-CALCE.png">        
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre de usuario">        
@@ -11,7 +11,7 @@
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Recordar contraseña</label>
       </div>
-      <button type="submit" class="btn btn-primary" routerLink="/muro">Entrar</button>
+      <button type="submit" class="btn btn-primary" (click)="onLogin()">Entrar</button>
       <p>¿Olvidaste tu contraseña?</p>
     </form>
   </div> 
