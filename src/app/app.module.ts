@@ -105,7 +105,7 @@ const appRoutes: Routes = [
     AngularFirestoreModule.enablePersistence(),
     BrowserAnimationsModule
   ],
- 
+
   providers: [AuthService, AngularFirestore, ComentsServiceService],
   bootstrap: [AppComponent]
 })

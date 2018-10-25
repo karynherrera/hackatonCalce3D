@@ -1,8 +1,28 @@
-h1 {
-    text-align: center;
+table {
+  border-collapse: collapse;
 }
 
-.banner img {
-    width: 80px;
-    
+td {
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    width:60%;
+}
+
+th {
+    color: aliceblue;
+    background-color: #363e4a;
+    padding: 10px;
+}
+
+#estado {
+    background-color: #65bfd9;
+    color: #363e4a;
+    border-block-start: content;
+}
+
+tr {
+}
+
+p {
+    text-align: center;
 }

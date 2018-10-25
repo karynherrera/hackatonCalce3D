@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
@@ -6,7 +6,6 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  pacientes: string;
   paciente: string;
   estado: string;
   amputacion: string;
@@ -17,11 +16,11 @@ export class InicioComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    fetch('../json/pacientes.json')
+    fetch('../assets/patients_directory.json')
     .then(res => res.json())
-    .then(pacientes => {
-      console.log('HOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA');
-      this.pacientes = pacientes;
+    .then(paciente => {
+      console.log(paciente);
+      this.paciente = paciente;
     });
   }
 }

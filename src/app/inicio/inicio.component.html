@@ -1,13 +1,28 @@
-<table class="table table-striped">
- 
-  <tbody>
-  <tr *ngFor="">
-    <td>{{item.name}}</td>
-    <td>{{item.email}}</td>
-    <td>{{item.age}}</td>
-    <td>{{item.city | uppercase}}</td>
-    <td>{{item.email}}</td>
-    <td>{{item.email}}</td>
+<app-navbar></app-navbar>
+
+<p>INICIO</p>
+
+<div>
+        <table>
+          <thead>
+          <tr>
+            <th>Paciente</th>
+            <th>Estado</th>
+            <th>Amputacion</th>
+            <th>Diagnostico</th>
+            <th>Comuna</th>
+            <th>Institucion</th>
+          </tr>
+          </thead>
+ <tbody>
+  <tr *ngFor="let paciente of paciente">
+    <td>{{paciente.paciente}}</td>
+    <td id="estado">{{paciente.estado}}</td>
+    <td>{{paciente.amputacion}}</td>
+    <td>{{paciente.diagnostico}}</td>
+    <td>{{paciente.comuna}}</td>
+    <td>{{paciente.institucion}}</td>
   </tr>
   </tbody>
 </table>
+</div>
