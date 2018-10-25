@@ -1,41 +1,68 @@
-<div class="container-fluid animated fadeIn">
-  <div class="row">
-    <div class="col-6 text-center">
-      <button type="button" class="btn btnCreate">Crear paciente</button>
-    </div>
-    <div class="col-6 text-center">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
-        <div class="input-group-append">
-          <button class="btn btnSearch" type="button"><i class="fas fa-search"></i></button>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-ms-12">
+        <p>¡Bienvenido!</p>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-12 p-0">
-        <table class="table">
-            <thead class="thead">
-              <tr>
-                <th>Paciente</th>
-                <th>Estado</th>
-                <th>Amputación</th>
-                <th>Diagnóstico</th>
-                <th>Comuna</th>
-                <th>Institución</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td *ngFor = "let paciente of pacientes">{{paciente.paciente}}</td>
-                <td *ngFor = "let paciente of pacientes">{{paciente.estado}}</td>
-                <td *ngFor = "let paciente of pacientes">{{paciente.amputacion}}</td>
-                <td *ngFor = "let paciente of pacientes">{{paciente.diagnostico}}</td>
-                <td *ngFor = "let paciente of pacientes">{{paciente.comuna}}</td>
-                <td *ngFor = "let paciente of pacientes">{{paciente.institucion}}</td>
-              </tr>
-            </tbody>
-          </table>
+    <div class="row"> 
+        <div class="col-md-3">
+            <a class="#"></a>
+          </div> 
+        <div class="col-md-3">
+          <button type="button" class="btn btn-primary">Crea paciente</button>
+        </div>
+        
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Nombre del paciente" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+            </div>
+          </div>   
     </div>
-  </div>
-</div>
+    <div class="row">
+        <div class="input-group-text">
+            <input type="checkbox" aria-label="Checkbox for following text input">
+            <label class="form-check-label" for="exampleCheck1"> Esperando cavidad</label>
+          </div>
+          <div class="input-group-text">
+              <input type="checkbox" aria-label="Checkbox for following text input">
+              <label class="form-check-label" for="exampleCheck1"> Diseño en discución</label>
+            </div>
+            <div class="input-group-text">
+                <input type="checkbox" aria-label="Checkbox for following text input">
+                <label class="form-check-label" for="exampleCheck1"> Diseño aceptado/imprimiendo</label>
+              </div>
+              <div class="input-group-text">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                  <label class="form-check-label" for="exampleCheck1"> Cavidad entregada</label>
+                </div>
+        <div class="btnFil">
+            <button type="button" class="btn btn-primary">Filtrar</button>
+          </div>
+    </div>
+    <div>
+    <table class="table" id="tableOne">      
+        <thead class="thead-dark">
+            <tr>
+              <th scope="col">Paciente</th>
+              <th scope="col">Estado</th>
+              <th scope="col">Amputación</th>
+              <th scope="col">Diagnóstico</th>
+              <th scope="col">Comuna</th>
+              <th scope="col">Institución</th>
+            </tr>
+          </thead>
+        <tbody *ngFor="let paciente of pacientes">
+          <tr>
+            <td scope="row">{{paciente.paciente}}</td>
+            <td>{{paciente.estado}}</td>
+            <td>{{paciente.amputacion}}</td>
+            <td>{{paciente.diagnostico}}</td>
+            <td>{{paciente.comuna}}</td>
+            <td>{{paciente.institucion}}</td>
+          </tr>         
+        </tbody>
+      </table>
+  
+  

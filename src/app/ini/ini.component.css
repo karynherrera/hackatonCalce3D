@@ -1,18 +1,50 @@
-.btnSearch {
-    background-color: white;
-    color: #343f4b;
-    border-color:#DFDFDF;
-    border-left-color: white;
-}
-
-.btnCreate {
+.menu{
+    padding-top: 3%;
+  }
+  a:hover{    
+    
+    color:#13ce66;
+  }
+  p{
+    text-align: center;
+    font-weight: 700;
+    font-size: 26px;
+  }
+  a{
+    color: #4D5863;
+    font-weight: 700;   
+  }
+  .form-control{
+    border-right:none; 
+  }
+  .btn-primary{
     background-color: #5bc0de;
-    color:white;
-}
+    border: none;
+    color: white;
+  }
+  #basic-addon2{
+  border-left: none;
+  background-color: white;
+  border-color: #cad0d8;
+  margin-right: 25%;
+  }
+  .input-group-text{
+    margin: 2%;
+    background-color: white;
+    height: 50px;
+  }
+  .btnFil{
+    margin: 2%;
+    
+  }
+  td{
+    background-color: #f4f5f6;
+  }
 
-.thead {
-    background-color: #343f4b;
-    color:white;
-    font-family: "K2D", sans-serif;
-    border-radius: 5px;
-}
+  .btn:hover{
+    color: #0DAC8A !important; 
+  }
+  .input-group{
+      width: 45%;
+  }
+ 
