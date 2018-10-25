@@ -15,6 +15,14 @@ import { WallLoginComponent } from 'src/app/wall-login/wall-login.component';
 import {MatCardModule} from '@angular/material/card';
 import { InstitutionComponent } from './institution/institution.component';
 import { ScannerComponent } from './scanner/scanner.component';
+import { ComentarioComponent } from './scanner/comentario/comentario.component';
+import { AddCommentComponent } from './scanner/add-comment/add-comment.component';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireDatabaseModule } from "@angular/fire/database";
+import { AngularFirestore, AngularFirestoreModule} from '@angular/fire/firestore';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { ComentsServiceService } from 'src/app/services/coments-service.service';
 
 const appRoutes: Routes = [
   {
@@ -52,7 +60,9 @@ const appRoutes: Routes = [
     WallLoginComponent,
     ScannerComponent,
     FormLoginComponent,
-    InstitutionComponent
+    InstitutionComponent,
+    AddCommentComponent,
+    ComentarioComponent
 
   ],
   imports: [
@@ -62,9 +72,13 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     FormsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    AngularFireStorageModule,
+    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule.enablePersistence()
   ],
-  providers: [],
+  providers: [AngularFirestore, ComentsServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

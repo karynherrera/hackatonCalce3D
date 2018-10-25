@@ -1,0 +1,10 @@
+<mat-card *ngFor ="let post of comentarios"class="card">
+  <div class="row">
+      <div class="col">
+        <p>{{post.comentario}}</p>
+      </div>
+      <div class="col-3">
+          <button (click)="delete($event, post)" mat-button type="submit" class='eliminar'>Eliminar Comentario</button>
+      </div>
+  </div>
+</mat-card>
