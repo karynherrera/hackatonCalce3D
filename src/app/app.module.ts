@@ -1,12 +1,17 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule, Component } from "@angular/core";
-import { AppComponent } from "./app.component";
-import { InicioComponent } from "./inicio/inicio.component";
-import { MatButtonModule } from "@angular/material/button";
+
+
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, Component } from '@angular/core';
+import { AppComponent } from './app.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { FormLoginComponent } from './form-login/form-login.component';
+import { MatButtonModule } from '@angular/material/button';
+
 // Formulario
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+
 import { WallLoginComponent } from './wall-login/wall-login.component';
 import { FormLoginComponent } from './form-login/form-login.component';
 import { InstitutionComponent } from './institution/institution.component';
@@ -31,42 +36,42 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ComentsServiceService } from "src/app/services/coments-service.service";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 const appRoutes: Routes = [
   {
 
-    path: "crearPaciente",
+    path: 'crearPaciente',
     component: CrearPacienteComponent
   },
   {
-    path: "Inicio",
+    path: 'Inicio',
     component: InicioComponent
   },
   {
-    path:'',
-    component: WallLoginComponent, 
-  },  
+    path: '',
+    component: WallLoginComponent,
+  },
   {
-    path: "profile",
+    path: 'profile',
     component: ProfileComponent,
   },
   {
-    path: "muro",
+    path: 'muro',
     component: InstitutionComponent
   },
-  
   {
-    path: "principal",
+    path: 'principal',
     component: NavbarComponent
   },
 
   {
-    path: "scanner",
+    path: 'scanner',
     component: ScannerComponent
   },
   {
-    path: "**",
-    pathMatch: "full",
-    redirectTo: ""
+    path: '**',
+    pathMatch: 'full',
+    redirectTo: ''
   }
 ];
 
