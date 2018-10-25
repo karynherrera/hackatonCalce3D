@@ -1,53 +1,69 @@
-.menu{
-    padding-top: 3%;
-  }
-  a:hover{    
-    
-    color:#13ce66;
-  }
-  p{
-    text-align: center;
-    font-weight: 700;
-    font-size: 26px;
-  }
-  a{
-    color: #4D5863;
-    font-weight: 700;   
-  }
-  .form-control{
-    border-right:none; 
-  }
-  .btn-primary{
-    background-color: #5bc0de;
-    border: none;
-    color: white;
-  }
-  #basic-addon2{
+.menu {
+  padding-top: 3%;
+}
+
+.scrollDiv {
+  overflow-x: scroll;
+}
+
+.form-control{
+margin:2%;
+}
+.input-group {
+  border-color: #dfdfdf;
+  border-left-color: white;
+}
+a:hover {
+  color: #13ce66;
+}
+p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+}
+a {
+  color: #4d5863;
+}
+
+.btn-primary {
+  background-color: #5bc0de;
+  border: none;
+  color: white;
+  margin:2rem;
+}
+#basic-addon2 {
   border-left: none;
   background-color: white;
   border-color: #cad0d8;
   margin-right: 25%;
-  }
-  .input-group-text{
-    margin: 2%;
-    background-color: white;
-    height: 50px;
-  }
-  .btnFil{
-    margin: 2%;
-    
-  }
-  td{
-    background-color: #f4f5f6;
-  }
+}
+.input-group-text {
+  margin: 2%;
+  background-color: white;
+  height: 50px;
+}
+.btnFil {
+  margin: 2%;
+}
+td {
+  background-color: #f4f5f6;
+}
+
+.input-group {
+  width: 45%;
+}
+
+
+#navbarNav {
+  height:100vh;
+}
 
   .btn:hover{
     color: #0DAC8A !important; 
   }
-  .input-group{
-      width: 45%;
-  }
+  
  
   .perfil{
     cursor: pointer;
   }
+
