@@ -31,8 +31,9 @@ a {
   margin: 3.5%;
   background-color: white;
 }
-.btnFil {
+.btnFil{
   margin: 3.5%;
+  width: 50%;
 }
 td {
   background-color: #f4f5f6;
@@ -46,4 +47,12 @@ td {
 }
 .btn:hover {
   color: #0dac8a !important;
+}
+
+.inputBuscar{
+  width: 50%;
+  display: inline;
+}
+.filtrar{
+  display: inline;
 }
