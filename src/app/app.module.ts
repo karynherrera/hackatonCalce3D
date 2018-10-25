@@ -9,10 +9,13 @@ import {MatButtonModule} from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { WallLoginComponent } from './wall-login/wall-login.component';
+import { FormLoginComponent } from './form-login/form-login.component';
+import { InstitutionComponent } from './institution/institution.component';
+import { ProfileComponent } from 'src/app/profile/profile.component';
 import { CrearPacienteComponent } from './crear-paciente/crear-paciente.component';
 import { NavbarComponent } from "src/app/navbar/navbar.component";
-import { WallLoginComponent } from 'src/app/wall-login/wall-login.component';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { InstitutionComponent } from './institution/institution.component';
 import { ScannerComponent } from './scanner/scanner.component';
 import { ComentarioComponent } from './scanner/comentario/comentario.component';
@@ -26,21 +29,30 @@ import { ComentsServiceService } from 'src/app/services/coments-service.service'
 
 const appRoutes: Routes = [
   {
+
     path:'',
     component: WallLoginComponent, 
   }, 
   {
+
+    path:'muro',
+    component: InstitutionComponent, 
+  },  
+  {
+    path: 'Inicio',
+    component: InicioComponent,
+  }, 
+  {
     path:'principal',
     component: NavbarComponent, 
+
   },
-  {
-    path: "Inicio",
-    component: InicioComponent
-  },
+  
   {
     path: "crearPaciente",
     component: CrearPacienteComponent
   },
+
   {
     path: 'scanner',
     component: ScannerComponent,
@@ -49,14 +61,21 @@ const appRoutes: Routes = [
     path: '**', pathMatch: 'full', redirectTo: ''
 
   }
+
 ];
 
 @NgModule({
   declarations: [
+    AppComponent,    
+    WallLoginComponent,    
+    FormLoginComponent, 
+    InstitutionComponent, 
+    InicioComponent,  
     AppComponent,
     InicioComponent,
     NavbarComponent,
     CrearPacienteComponent,
+
     WallLoginComponent,
     ScannerComponent,
     FormLoginComponent,
@@ -65,6 +84,7 @@ const appRoutes: Routes = [
     ComentarioComponent
 
   ],
+  
   imports: [
     BrowserModule,
     ReactiveFormsModule,
