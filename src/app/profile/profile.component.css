@@ -19,6 +19,8 @@ h3 {
   background-color: #65bfd9;
   color: white;
   border-color: #65bfd9;
+  display: block;
+  margin: 2.5%;
 }
 
 @media (min-width: 1024px) {

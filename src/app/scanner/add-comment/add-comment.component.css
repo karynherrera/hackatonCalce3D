@@ -9,6 +9,7 @@
   padding-right: 1%;
   padding-bottom: 1%;
   position: relative;
+  border:none;
 }
 
 
@@ -35,8 +36,17 @@ input[placeholder] {
 
 .mat-button{
   position: relative;
-  text-align: left;
-  background-color: #2980b9;
+  text-align: right;
+  background-color: #00BCD4;
   color:white;
   margin: 1%;
+}
+textarea{
+  margin: 1%;
+  border: none;
+  padding: 0%;
+  width: 95%;
+}
+textarea:focus{
+  border: none;
 }
