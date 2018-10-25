@@ -1,18 +1,22 @@
-<div class="cont">
-  <form [formGroup]="formLogin">
-    <div class="form-group">
-      <img src="../../assets/LOGO-CALCE.png">
-      <input type="email" class="form-control" formControlName="email" id="exampleInputEmail1" aria-describedby="emailHelp"
-        placeholder="Nombre de usuario">
+<div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-9 cont text-center">
+        <form form [formGroup]="formLogin" *ngIf="!(authService.user | async)">
+          <div class="form-group">
+            <img src="../../assets/LOGO-CALCE.png" class="img-fluid">
+            <input type="email" class="form-control mx-auto" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Nombre de usuario">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control mx-auto" id="exampleInputPassword1" placeholder="Contraseña">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Recordar contraseña</label>
+          </div>
+            <button type="submit" class="btn btn-primary" routerLink="/muro">Entrar</button>
+          <p class="mt-2">¿Olvidaste tu contraseña?</p>
+        </form>
+      </div>
     </div>
-    <div class="form-group">
-      <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password" placeholder="Contraseña">
-    </div>
-    <div class="form-group form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Recordar contraseña</label>
-    </div>
-    <button type="submit" class="btn btn-primary" (click)="onLogin()">Entrar</button>
-    <p>¿Olvidaste tu contraseña?</p>
-  </form>
-</div>
+  </div>
