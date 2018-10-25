@@ -1,0 +1,41 @@
+<div class="container-fluid animated fadeIn">
+  <div class="row">
+    <div class="col-6 text-center">
+      <button type="button" class="btn btnCreate">Crear paciente</button>
+    </div>
+    <div class="col-6 text-center">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+        <div class="input-group-append">
+          <button class="btn btnSearch" type="button"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 p-0">
+        <table class="table">
+            <thead class="thead">
+              <tr>
+                <th>Paciente</th>
+                <th>Estado</th>
+                <th>Amputación</th>
+                <th>Diagnóstico</th>
+                <th>Comuna</th>
+                <th>Institución</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td *ngFor = "let paciente of pacientes">{{paciente.paciente}}</td>
+                <td *ngFor = "let paciente of pacientes">{{paciente.estado}}</td>
+                <td *ngFor = "let paciente of pacientes">{{paciente.amputacion}}</td>
+                <td *ngFor = "let paciente of pacientes">{{paciente.diagnostico}}</td>
+                <td *ngFor = "let paciente of pacientes">{{paciente.comuna}}</td>
+                <td *ngFor = "let paciente of pacientes">{{paciente.institucion}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+  </div>
+</div>

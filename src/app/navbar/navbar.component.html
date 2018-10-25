@@ -1,6 +1,6 @@
 <!-- Sidebar -->
 
-<div class="container-fluid">
+<div class="container-fluid animated fadeIn">
   <div class="row">
     <div class="col-xl-2 col-lg-3 col-sm-3 p-0 sidebar sidebar-sticky">
       <nav class="navbar navbar-expand-sm flex-sm-column p-0 float-left">
@@ -20,10 +20,13 @@
       </nav>
     </div>
     <div class="col-xl-10 col-lg-9 col-sm-9">
-      <app-profile *ngIf="verProfile===false" (onScan)="viewScan(event)"></app-profile>
+      <app-ini *ngIf="verInicio===true"></app-ini>
+      <app-profile *ngIf="verProfile===true" (onScan)="viewScan(event)"></app-profile>
       <app-scanner *ngIf="verScanner===true"></app-scanner>
+      <!--<app-institution></app-institution>-->
       <app-institution *ngIf="verInstitucion===true"></app-institution>
       <app-crear-paciente *ngIf="verCrear===true"></app-crear-paciente>
+
     </div>
   </div>
 </div>

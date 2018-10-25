@@ -29,6 +29,7 @@ import { environment } from '../environments/environment';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ComentsServiceService } from 'src/app/services/coments-service.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IniComponent } from './ini/ini.component';
 
 
 const appRoutes: Routes = [
@@ -87,7 +88,8 @@ const appRoutes: Routes = [
     ProfileComponent,
     InstitutionComponent,
     AddCommentComponent,
-    ComentarioComponent
+    ComentarioComponent,
+    IniComponent
   ],
   imports: [
     BrowserModule,

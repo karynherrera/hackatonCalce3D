@@ -1,0 +1,18 @@
+.btnSearch {
+    background-color: white;
+    color: #343f4b;
+    border-color:#DFDFDF;
+    border-left-color: white;
+}
+
+.btnCreate {
+    background-color: #5bc0de;
+    color:white;
+}
+
+.thead {
+    background-color: #343f4b;
+    color:white;
+    font-family: "K2D", sans-serif;
+    border-radius: 5px;
+}

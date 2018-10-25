@@ -1,23 +1,8 @@
-<body>
-  <div class="container">
-    <div class="row menu">
-      <div class="col-12">
-    <ul class="nav">
-        <li class="nav-item">
-          <a class="btn nav-link btn-nav">Institución</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn nav-link btn-nav" (click)="viewInicio($event)">Inicio</a>
-        </li>        
-      </ul>
-    </div>
-    </div>
-    </div>
-    <hr>
+<body>  
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-ms-12">
-        <p>¡Bienvenido Gabriel!</p>
+        <p>¡Bienvenido!</p>
         </div>
       </div>
     </div>
@@ -56,10 +41,11 @@
             <button type="button" class="btn btn-primary">Filtrar</button>
           </div>
     </div>
-    <table class="table">
+    <div>
+    <table class="table" id="tableOne">
         <thead class="thead-dark">
           <tr>
-            <th scope="col">Pacientes en INRPAC</th>
+            <th scope="col">Pacientes en MUTUAL</th>
             <th scope="col"></th>
             <th scope="col"></th>
             <th scope="col"></th>
@@ -77,37 +63,21 @@
               <th scope="col">Institución</th>
             </tr>
           </thead>
-        <tbody>
+        <tbody *ngFor="let paciente of pasFil">
           <tr>
-            <td scope="row">1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <td scope="row">2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <td scope="row">3</td>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-          </tr>
+            <td scope="row">{{paciente.paciente}}</td>
+            <td>{{paciente.estado}}</td>
+            <td>{{paciente.amputacion}}</td>
+            <td>{{paciente.diagnostico}}</td>
+            <td>{{paciente.comuna}}</td>
+            <td>{{paciente.institucion}}</td>
+          </tr>         
         </tbody>
       </table>
       <table class="table">
           <thead class="thead-dark">
             <tr>
-              <th scope="col">Pacientes en MUTUAL</th>
+              <th scope="col">Pacientes en INRPAC</th>
               <th scope="col"></th>
               <th scope="col"></th>
               <th scope="col"></th>
@@ -125,32 +95,17 @@
                 <th scope="col">Institución</th>
               </tr>
             </thead>
-          <tbody>
+          <tbody *ngFor="let paciente of pasFilFirst">
             <tr>
-              <td scope="row">1</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <td scope="row">2</td>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <td scope="row">3</td>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-            </tr>
+              <td scope="row">{{paciente.paciente}}</td>
+              <td>{{paciente.estado}}</td>
+              <td>{{paciente.amputacion}}</td>
+              <td>{{paciente.diagnostico}}</td>
+              <td>{{paciente.comuna}}</td>
+              <td>{{paciente.institucion}}</td>
+            </tr>        
           </tbody>
         </table>
+      </div>
 </body>
 
