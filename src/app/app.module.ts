@@ -18,18 +18,21 @@ import { ScannerComponent } from './scanner/scanner.component';
 
 const appRoutes: Routes = [
   {
-    path: "crearPaciente",
-    component: CrearPacienteComponent
+    path:'',
+    component: WallLoginComponent, 
+  }, 
+  {
+    path:'principal',
+    component: NavbarComponent, 
   },
   {
     path: "Inicio",
     component: InicioComponent
   },
   {
-
-    path:'',
-    component: WallLoginComponent, 
-  }, 
+    path: "crearPaciente",
+    component: CrearPacienteComponent
+  },
   {
     path: 'scanner',
     component: ScannerComponent,
@@ -47,7 +50,7 @@ const appRoutes: Routes = [
     NavbarComponent,
     CrearPacienteComponent,
     WallLoginComponent,
-
+    ScannerComponent,
     FormLoginComponent,
     InstitutionComponent
 
