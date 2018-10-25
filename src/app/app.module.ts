@@ -44,8 +44,8 @@ const appRoutes: Routes = [
     component: WallLoginComponent, 
   },  
   {
-    path: "",
-    component: WallLoginComponent
+    path: "profile",
+    component: ProfileComponent,
   },
   {
     path: "muro",
