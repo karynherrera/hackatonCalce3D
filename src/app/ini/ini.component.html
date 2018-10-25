@@ -55,7 +55,7 @@
           </thead>
         <tbody *ngFor="let paciente of pacientes">
           <tr>
-            <td scope="row">{{paciente.paciente}}</td>
+            <td scope="row" class="perfil" (click)="viewProfile($event)">{{paciente.paciente}}</td>
             <td>{{paciente.estado}}</td>
             <td>{{paciente.amputacion}}</td>
             <td>{{paciente.diagnostico}}</td>
