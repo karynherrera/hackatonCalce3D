@@ -23,6 +23,14 @@ export class NavbarComponent implements OnInit {
     this.verScanner=false;
     this.verCrear=false;
   }
+
+  viewInicio(event):void{
+    this.verInstitucion = false;
+    this.verScanner = false;
+    this.verProfile= false; 
+    this.verCrear = false;
+    this.verInicio=true;
+  }
   
   public viewScan(event):void { 
     //console.log('paso por el hijo al padre');
