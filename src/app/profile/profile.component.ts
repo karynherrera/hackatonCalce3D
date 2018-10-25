@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
+  verScanner: Boolean = false;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  viewScan(event){
+    this.verScanner = true;
+    console.log(this.verScanner);
+    }
 }
