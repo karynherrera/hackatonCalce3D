@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 })
 export class FormLoginComponent implements OnInit {
   formLogin: FormGroup;
+
   constructor(private formBuilder:FormBuilder, public authService:AuthService, public snackBar: MatSnackBar, private router: Router, private location: Location) { this.createFormLogin();}
 
   ngOnInit() {
@@ -23,14 +24,14 @@ export class FormLoginComponent implements OnInit {
       password: ['']
     });
   }
-
   onLogin(){
-    this.authService.login(this.formLogin.value.email, this.formLogin.value.password)
-    .then(()=>{
+    this.authService.login(this.formLogin.value.email, this.formLogin.value.password)    
+    .then(()=>{ 
+      console.log(this.formLogin.value.email);    
       this.router.navigate(['/muro']);
     })
-    .catch((error)=>{ 
-      console.log(error);  
+    .catch((error)=>{  
+      console.log(error);
     this.snackBar.open('Error al tratar de iniciar sesión, trata otra vez'
                         ,null
                         ,{
