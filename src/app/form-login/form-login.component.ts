@@ -29,7 +29,7 @@ export class FormLoginComponent implements OnInit {
     this.authService.login(this.formLogin.value.email, this.formLogin.value.password)    
     .then(()=>{            
       console.log(this.formLogin.value.email);    
-      this.router.navigate(['/muro']);
+      this.router.navigate(['/principal']);
     })
     .catch((error)=>{  
       console.log(error);

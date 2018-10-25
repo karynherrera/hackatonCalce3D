@@ -4,10 +4,10 @@
       <div class="col-12">
     <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Institución</a>
+          <a class="btn nav-link btn-nav">Institución</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Inicio</a>
+          <a class="btn nav-link btn-nav" (click)="viewInicio($event)">Inicio</a>
         </li>        
       </ul>
     </div>
@@ -56,6 +56,7 @@
             <button type="button" class="btn btn-primary">Filtrar</button>
           </div>
     </div>
+    <div *ngFor="let paciente of pacientes">
     <table class="table">
         <thead class="thead-dark">
           <tr>
@@ -79,28 +80,28 @@
           </thead>
         <tbody>
           <tr>
-            <td scope="row">1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
+            <td scope="row">{{paciente.paciente}}</td>
+            <td>{{paciente.estado}}</td>
+            <td>{{paciente.amputacion}}</td>
+            <td>{{paciente.diagnostico}}</td>
+            <td>{{paciente.comuna}}</td>
+            <td>{{paciente.institucion}}</td>
           </tr>
           <tr>
-            <td scope="row">2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
+            <td scope="row"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
-            <td scope="row">3</td>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
+            <td scope="row"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
         </tbody>
       </table>
@@ -152,5 +153,6 @@
             </tr>
           </tbody>
         </table>
+      </div>
 </body>
 
