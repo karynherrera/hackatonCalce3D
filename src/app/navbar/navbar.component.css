@@ -17,7 +17,9 @@ background-color: #363e4a;
 }
 .navbar {
     background-color:#65bfd9;
+    z-index: 99999;
 }
+
 .logoNavbar {
   background-color: #363e4a;
   width: 80%;
@@ -45,9 +47,13 @@ background-color: #363e4a;
         display: none;
     }
     .navbar-brand {
-        display:block;
-        background-image: url(../../assets/logo.png);
+        display: none;
     }
+    .small {
+        display: inline-block;
+        width: 100%;
+    }
+    
 }
 
 /*#363E4A negro*/
