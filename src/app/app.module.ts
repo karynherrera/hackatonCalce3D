@@ -12,6 +12,7 @@ import { NavbarComponent } from "src/app/navbar/navbar.component";
 import { WallLoginComponent } from "src/app/wall-login/wall-login.component";
 import { MatCardModule } from "@angular/material/card";
 import { InstitutionComponent } from "./institution/institution.component";
+import { ProfileComponent } from './profile/profile.component';
 const appRoutes: Routes = [
   {
     path: "crearPaciente",
@@ -35,7 +36,8 @@ const appRoutes: Routes = [
     CrearPacienteComponent,
     WallLoginComponent,
     FormLoginComponent,
-    InstitutionComponent
+    InstitutionComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
