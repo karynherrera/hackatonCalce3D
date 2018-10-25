@@ -1,0 +1,36 @@
+h3 {
+  font-family: "K2D", sans-serif;
+  background-color: #65bfd9;
+  color: #363e4a;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-header {
+  background-color: #363e4a;
+  color: white;
+  font-family: "K2D", sans-serif;
+}
+
+.btn {
+  width: 90%;
+  background-color: #65bfd9;
+  color: white;
+  border-color: #65bfd9;
+  display: block;
+  margin: 2.5%;
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    width: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  .extr {
+    font-size: 18px;
+  }
+}

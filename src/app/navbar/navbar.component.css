@@ -1,22 +1,22 @@
-html {
-    height: 100vh;
-}
-
-#sidebar {
-  box-shadow: 2px 2px 5px #999;
-  height: 100%;
-}
 .small {
     display: none;
 }
 .collapse {
     background: #65bfd9; 
+    width: 100%;
 }
 .navbar-brand {
 background-color: #363e4a;
+
 }
 .navbar {
     background-color:#65bfd9;
+    height:100%;
+}
+.sidebar {
+    background-color:#65bfd9;
+    width:100%;
+    box-shadow: 2px 2px 5px #999;
 }
 .logoNavbar {
   background-color: #363e4a;
@@ -25,8 +25,6 @@ background-color: #363e4a;
 
 .headerNavbar {
   background-color: #363e4a;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 
 .fas {
@@ -40,18 +38,20 @@ background-color: #363e4a;
   padding: 2rem;
 }
 
-@media (max-width:768px){
+@media (max-width:576px){
     .logoNavbar {
         display: none;
     }
     .navbar-brand {
-        display:block;
-        background-image: url(../../assets/logo.png);
+        display: none;
+    }
+    .small {
+        background-color: #363e4a;
+        display: inline-block;
+        width: 100%;
+    }
+    .navbar-toggler {
+        background-color: #363e4a;
+        padding: 1rem;
     }
 }
-
-/*#363E4A negro*/
-/*#363D4B gris*/
-/*#65BFD9 celeste*/
-/*#32C970 verde*/
-/*#F1F5F4 gris suave*/
