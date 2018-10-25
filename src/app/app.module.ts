@@ -1,3 +1,4 @@
+
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule, Component } from "@angular/core";
 import { AppComponent } from "./app.component";
@@ -9,6 +10,7 @@ import { FormsModule } from "@angular/forms";
 import { ReactiveFormsModule } from "@angular/forms";
 import { RouterModule, Routes } from "@angular/router";
 import { CrearPacienteComponent } from "./crear-paciente/crear-paciente.component";
+
 import { NavbarComponent } from "src/app/navbar/navbar.component";
 import { WallLoginComponent } from "src/app/wall-login/wall-login.component";
 import { MatCardModule } from "@angular/material/card";
@@ -29,6 +31,7 @@ import { ComentsServiceService } from "src/app/services/coments-service.service"
 
 const appRoutes: Routes = [
   {
+
     path: "crearPaciente",
     component: CrearPacienteComponent
   },
@@ -36,6 +39,10 @@ const appRoutes: Routes = [
     path: "Inicio",
     component: InicioComponent
   },
+  {
+    path:'',
+    component: WallLoginComponent, 
+  },  
   {
     path: "",
     component: WallLoginComponent
@@ -44,18 +51,10 @@ const appRoutes: Routes = [
     path: "muro",
     component: InstitutionComponent
   },
-  {
-    path: "Inicio",
-    component: InicioComponent
-  },
+  
   {
     path: "principal",
     component: NavbarComponent
-  },
-
-  {
-    path: "crearPaciente",
-    component: CrearPacienteComponent
   },
 
   {
