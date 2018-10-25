@@ -33,6 +33,7 @@
 }
 
 a {
+margin-left: 1rem;
   font-family: "K2D", sans-serif;
   background-color: #65bfd9;
   color: white !important;
