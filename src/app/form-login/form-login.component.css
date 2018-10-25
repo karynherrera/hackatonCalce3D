@@ -1,34 +1,34 @@
-.cont{
-  margin-top:8vh;
-  background-color: white; 
-  border: #3a9fe3 solid; 
-  padding: 5%; 
+.cont {
+  margin-top: 8vh;
+  background-color: white;
+  border: #3a9fe3 solid;
+  padding: 5%;
 }
 
 .row {
-background-color: #343f4b;
+  background-color: #343f4b;
 }
 
-.form-control{
+.form-control {
   width: 75%;
   border-top: none;
   border-left: none;
   border-right: none;
 }
 
-.btn-primary{
+.btn-primary {
   background-color: #5bc0de;
   border: none;
-  width: 25%;  
+  width: 25%;
 }
 
-@media(width: 768px){
-  .cont{
+@media (width: 768px) {
+  .cont {
     margin-bottom: 8vh;
   }
 }
-@media(max-width: 425px){
-  .btn-primary{
-    width: 50%;  
+@media (max-width: 425px) {
+  .btn-primary {
+    width: 50%;
   }
 }
