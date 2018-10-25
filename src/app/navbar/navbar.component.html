@@ -20,12 +20,10 @@
       </nav>
     </div>
     <div class="col-xl-10 col-lg-9 col-sm-9">
-      <app-profile *ngIf="verProfile===false" (onScan)="viewScan(event)"></app-profile>
+      <app-ini *ngIf="verInicio===true"></app-ini>
+      <app-profile *ngIf="verProfile===true" (onScan)="viewScan(event)"></app-profile>
       <app-scanner *ngIf="verScanner===true"></app-scanner>
-
-      <app-ini></app-ini>
       <!--<app-institution></app-institution>-->
-
       <app-institution *ngIf="verInstitucion===true"></app-institution>
       <app-crear-paciente *ngIf="verCrear===true"></app-crear-paciente>
 
