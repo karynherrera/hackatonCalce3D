@@ -19,21 +19,19 @@ export class FormLoginComponent implements OnInit {
   }
   createFormLogin() {
     this.formLogin = this.formBuilder.group({
-      email: ['', Validators.compose([Validators.required, Validators.email])],
-      password: ['', Validators.compose([Validators.required, Validators.minLength(4)])]
+      email: [''],
+      password: ['']
     });
   }
 
   onLogin(){
     this.authService.login(this.formLogin.value.email, this.formLogin.value.password)
     .then(()=>{
-    //Login exitoso, así que celebramos con el usuario (?)
       this.router.navigate(['/muro']);
     })
-    .catch(()=>{
-    //Algo salió mal, avisemos mejor para que reintente
+    .catch(()=>{   
     this.snackBar.open('Error al tratar de iniciar sesión, trata otra vez'
-                        ,null/*No necesitamos botón en el aviso*/
+                        ,null
                         ,{
                           duration : 3000
                         });

@@ -23,33 +23,5 @@ export class AuthService {
   logout(){
     return this.firebaseAuth.auth
       .signOut();
-  }
-  loginGoogle(){
-    return  new Promise<any>((resolve, reject)=>{
-      let provider = new firebase.auth.GoogleAuthProvider();
-      provider.addScope('profile');
-      provider.addScope('email');
-      this.firebaseAuth.auth
-      .signInWithPopup(provider)
-      .then(response => {
-        resolve (response)
-      }, err => {
-        console.log(err);
-        reject(err);
-      });
-    });
-  }
-  loginFacebook(){
-    return new Promise<any>((resolve, reject) => {
-      let provider = new firebase.auth.FacebookAuthProvider();
-      this.firebaseAuth.auth
-      .signInWithPopup(provider)
-      .then(response => {
-        resolve(response);
-      }, err => {
-        console.log(err);
-        reject(err);
-      })
-    })
-  }
+  }  
 }

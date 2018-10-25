@@ -29,6 +29,7 @@ import { AngularFireModule } from "@angular/fire";
 import { environment } from "../environments/environment";
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ComentsServiceService } from "src/app/services/coments-service.service";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   {
@@ -102,7 +103,8 @@ const appRoutes: Routes = [
     AngularFireStorageModule,
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule.enablePersistence()
+    AngularFirestoreModule.enablePersistence(),
+    BrowserAnimationsModule
   ],
  
   providers: [AuthService, AngularFirestore, ComentsServiceService],
