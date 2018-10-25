@@ -35,10 +35,7 @@ a {
   margin: 3.5%;
   background-color: white;
 }
-.btnFil{
-  margin: 3.5%;
-  width: 50%;
-}
+
 td {
   background-color: #f4f5f6;
 }
@@ -68,10 +65,13 @@ a {
 }
 
 .inputBuscar{
-  width: 50%;
+  width: 100%;
   display: inline;
 }
 .filtrar{
   display: inline;
+  background-color: #5bc0de;
+  color: white;
+  border-color: #5bc0de;
 }
 

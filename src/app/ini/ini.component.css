@@ -6,13 +6,7 @@
   overflow-x: scroll;
 }
 
-.form-control{
-margin:2%;
-}
-.input-group {
-  border-color: #dfdfdf;
-  border-left-color: white;
-}
+
 a:hover {
   color: #13ce66;
 }
@@ -50,7 +44,7 @@ td {
 }
 
 .input-group {
-  width: 45%;
+  width: 100%;
 }
 
 
