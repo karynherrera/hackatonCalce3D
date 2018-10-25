@@ -48,7 +48,7 @@ const appRoutes: Routes = [
     NavbarComponent,
     CrearPacienteComponent,
     WallLoginComponent,
-
+    ScannerComponent,
     FormLoginComponent,
     InstitutionComponent,
     ProfileComponent,
