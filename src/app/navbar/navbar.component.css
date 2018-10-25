@@ -1,26 +1,26 @@
 .small {
-    display: none;
+  display: none;
 }
 .collapse {
-    background: #65bfd9; 
-    width: 100%;
+  background: #65bfd9;
+  width: 100%;
 }
 .navbar-brand {
-background-color: #363e4a;
-
+  background-color: #363e4a;
 }
 .navbar {
-    background-color:#65bfd9;
-    height:100%;
+  background-color: #65bfd9;
+  height: 100%;
 }
 .sidebar {
-    background-color:#65bfd9;
-    width:100%;
-    box-shadow: 2px 2px 5px #999;
+  background-color: #65bfd9;
+  width: 100%;
+  box-shadow: 2px 2px 5px #999;
 }
+
 .logoNavbar {
   background-color: #363e4a;
-  width: 80%;
+  width: 100%;
 }
 
 .headerNavbar {
@@ -32,37 +32,34 @@ background-color: #363e4a;
   font-size: 2rem;
 }
 
-.link {
+a {
+margin-left: 1rem;
   font-family: "K2D", sans-serif;
-  color: white;
+  background-color: #65bfd9;
+  color: white !important;
+  display: block;
+  cursor: pointer;
+  text-align: left;
   padding: 2rem;
 }
-a{
-    background-color: #65BFD9;
-    color: white;
-    display: block;
-    cursor:pointer;
-    text-align: left;
-  }
-  a:hover{
-    color: #0DAC8A !important; 
-  }
-  
+a:hover {
+  color: #0dac8a !important;
+}
 
-@media (max-width:576px){
-    .logoNavbar {
-        display: none;
-    }
-    .navbar-brand {
-        display: none;
-    }
-    .small {
-        background-color: #363e4a;
-        display: inline-block;
-        width: 100%;
-    }
-    .navbar-toggler {
-        background-color: #363e4a;
-        padding: 1rem;
-    }
+@media (max-width: 576px) {
+  .logoNavbar {
+    display: none;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  .small {
+    background-color: #363e4a;
+    display: inline-block;
+    width: 100%;
+  }
+  .navbar-toggler {
+    background-color: #363e4a;
+    padding: 1rem;
+  }
 }
