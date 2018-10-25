@@ -49,13 +49,21 @@ td {
   background-color: #f4f5f6;
 }
 
-.btn:hover {
-  color: #0dac8a !important;
-}
 .input-group {
   width: 45%;
 }
 
+
 #navbarNav {
   height:100vh;
 }
+
+  .btn:hover{
+    color: #0DAC8A !important; 
+  }
+  
+ 
+  .perfil{
+    cursor: pointer;
+  }
+
